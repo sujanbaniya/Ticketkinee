@@ -1,0 +1,116 @@
+.mainDiv{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 265px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    transition: 0.3s;
+    border-radius: 12px;
+}
+.mainDiv:hover{
+    transform: scale(1.045);
+}
+.mainDiv .photoDiv{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainDiv .photoDiv img{
+    height: auto;
+    width: 80%;
+    transition: 0.3s all ease-in-out;
+}
+.mainDiv .photoDiv img:hover{
+    width: 95%;
+}
+.mainDiv .detailsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 100%;
+    max-width: 100%;
+    height: 70%;
+    position: relative;
+    box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.15) ;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.mainDiv .detailsDiv:hover{
+    opacity: 0.95;
+}
+.mainDiv .detailsDiv div.location{
+    padding: 20px 20px;
+    font-size: 17px;
+    color: rgb(56, 129, 133);
+    font-weight: 600;
+    min-width: 100%;
+    max-height: 50px;
+    max-width: 100%;
+    text-align: center;
+    /* overflow: hidden; */
+}
+.mainDiv .detailsDiv .date{
+    padding: 0px 0 20px;
+    max-height: 30px;
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+    overflow: hidden;
+    font-weight: 600;
+    color: rgb(56, 129, 133);
+}
+.mainDiv .detailsDiv .priceDiv{
+    position: absolute;
+    z-index: 9;
+    background-color: rgb(73, 122, 126) ;
+    bottom: 0;
+    width:100%;
+    min-height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+    align-self: flex-end;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.15) ;
+}
+.mainDiv .detailsDiv .bookNow{
+    position: absolute;
+    z-index: 99;
+    top: 103%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.724);
+    color: red;
+    transition: all 0.3s ease;
+    /* display: none; */
+}
+.mainDiv .detailsDiv .bookNow button{
+    padding: 6px 10px;
+    border: 1px solid rgb(178, 178, 178);
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    color: green;
+    cursor: hand;
+}

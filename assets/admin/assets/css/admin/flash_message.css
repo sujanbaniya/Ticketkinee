@@ -1,0 +1,105 @@
+body{
+    position: relative;
+}
+.middle{
+    position: relative;
+    z-index: -1;
+}
+.footer{
+    z-index: -1;
+}
+
+/* ERROR */
+
+.flash-message-error{
+    position: fixed;
+    border: 1px solid rgb(238, 238, 238);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-width: 240px;
+    height: 40px;
+    top: 87vh;
+    left: 2%;
+    padding: 5px;
+    padding-left: 20px;
+    background-color: rgb(242, 242, 242);
+    border-left-color: red;
+    border-radius: 4px;
+    border-left-width: thick;
+}
+.error{
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.error span{
+    text-align: center;
+    color: red;
+}
+.flash-message-error.show{
+    animation: show_slide 1s ease forwards;
+}
+.flash-message-error.hide{
+    animation: hide_slide 1s ease forwards;
+}
+
+/* SUCCESS */
+
+
+.flash-message-success{
+    position: fixed;
+    border: 1px solid rgb(238, 238, 238);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-width: 240px;
+    height: 40px;
+    top: 87vh;
+    left: 2%;
+    padding: 5px;
+    padding-left: 20px;
+    background-color: rgb(242, 242, 242);
+    border-left-color: green;
+    border-radius: 4px;
+    border-left-width: thick;
+}
+.success{
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.success span{
+    text-align: center;
+    color: green;
+}
+.flash-message-success.show{
+    animation: show_slide 1s ease forwards;
+}
+.flash-message-success.hide{
+    animation: hide_slide 1s ease forwards;
+}
+
+
+@keyframes show_slide{
+    0%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(5%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+@keyframes hide_slide{
+    0%{
+        transform: translateX(10px);
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(-120%);
+    }
+}

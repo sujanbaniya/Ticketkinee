@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: steelblue;
+    color: #fff;
+}
+
+.project {
+    display: block;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.project h2 {
+    text-align: center;
+    color: steelblue;
+}
+
+.logo {
+    display: flex;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.edit {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.edit input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.edit select {
+    height: 50px;
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    background-color: rgb(44, 83, 116);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: lightblue;
+    padding: 15px;
+    border: 0;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: steelblue;
+    color: white;
+    transition-delay: 100ms;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.edit input:focus,
+.edit input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.edit label {
+    color: lightblue;
+}
+
+
+/* for table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header_fixed {
+    max-height: 100vh;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #dddddd;
+}
+
+.header_fixed thead th {
+    position: sticky;
+    top: 0;
+    background-color: rgb(44, 83, 116);
+    color: #e6e7e8;
+    font-size: 15px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: black;
+}
+
+td img {
+    height: 60px;
+    width: auto;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(134, 134, 134);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(150, 157, 197);
+}
+
+tr:hover td {
+    color: steelblue;
+    cursor: pointer;
+    background-color: #2ed18e;
+}
+
+td button {
+    border: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: #e6e7e8;
+}
+
+.btn-form:hover {
+    background-color: #4c4c4c;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

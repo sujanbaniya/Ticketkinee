@@ -1,0 +1,35 @@
+.informationContainer{
+    margin: 40px 70px 50px;
+    border: 1px solid #24262b43 ;
+    border-radius: 20px;
+    height: 68vh;
+}
+.informationContainer h2{
+    font-size: 25px;
+    margin-left: 100px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.informationContainer form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.informationContainer form input{
+    width: 40%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #24262b83 ;
+    outline: none;
+    padding: 4px;
+    font-size: 18px;
+    padding-left: 8px;
+}
+.informationContainer form input:last-child{
+    margin-top: 20px;
+    outline: none;
+    background-color: #2d313ad9  ;
+    color: white;
+    border: none;
+}

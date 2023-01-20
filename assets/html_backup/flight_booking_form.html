@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Basic Form</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="tabset">
+            <!-- Tab 1 -->
+            <input type="radio" name="tabset" id="tab1" aria-controls="one-way" checked>
+            <label for="tab1">One way</label>
+            <!-- Tab 2 -->
+            <input type="radio" name="tabset" id="tab2" aria-controls="two-way">
+            <label for="tab2">Two way</label>
+            <!-- Tab 3 -->
+            <input type="radio" name="tabset" id="tab3" aria-controls="moutain flight">
+            <label for="tab3">Mountain Flight</label>
+
+            <div class="tab-panels">
+                <section id="One-way" class="tab-panel">
+                    <form class="register-form">
+                        <label for="From">From</label>
+                        <input type="text" placeholder="eg.Kathmandu" />
+                        <label for="To">To</label>
+                        <input type="text" placeholder="eg.Pokhara" />
+
+                        <label for="Departure date">Departure date</label>
+                        <input type="date">
+                        <button>Proceed</button>
+                    </form>
+
+                </section>
+                <section id="Two-way" class="tab-panel">
+                    <form class="register-form">
+                        <label for="From">From</label>
+                        <input type="text" placeholder="eg.Kathmandu" />
+                        <label for="To">To</label>
+                        <input type="text" placeholder="eg. Kathmandu" />
+
+                        <div class="date">
+                            <label for="Departure date">Departure date</label>
+                            <input type="date">
+    
+                            <label for="Return date">Return date</label>
+                            <input type="date">
+                        </div>
+                      
+                        <button>Proceed</button>
+                    </form>
+                </section>
+                <section id="Mountain" class="tab-panel">
+                    <form class="register-form">
+                        <label for="To">To</label>
+                        <input type="text" placeholder="eg. Kathmandu" />
+                        <button>Proceed</button>
+                    </form>
+                </section>
+            </div>
+
+        </div>
+
+        <!-- <form action="submit">
+            <label for="From">From</label>
+            <input type="text" placeholder="eg. Kathmandu">
+            <label for="To">To</label>
+            <input type="text" placeholder="eg. Pokhara">
+        </form> -->
+
+
+    </div>
+</body>
+
+</html>

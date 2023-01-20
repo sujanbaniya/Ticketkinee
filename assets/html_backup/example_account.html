@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketKinee | A place to buy tickets.</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- favicon code  -->
+    <link rel="icon" href="assets/logos/TicketKinee_favicon.png" type="image/ico">
+    <!-- favicon code ends  -->
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- font awesome cdn link ends  -->
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="assets/css/home.css">
+    <!-- custom css file link ends  -->
+
+</head>
+
+<body>
+    <!-- header/navbar section starts  -->
+
+    <header class="header">
+
+        <a href="main_page.php" class="logo"><img src="assets/logos/TicketKinee_LogoHorizontal.png" alt="Logo" class="logo"></a>
+
+        <nav class="navbar">
+            <a href="#HOME">HOME</a>
+            <a href="#TICKETS">TICKETS</a>
+            <a href="#PAYMENT">REVIEWS</a>
+
+        </nav>
+
+        <div class="icons">
+          
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="projects">
+                <button><div class="fas fa-user" id="login-btn"></div></button>
+                <ul>
+                  <li><a href="#">account</a></li>
+                  <li><a href="#">settings</a></li>
+                  <li><a href="#">tickets</a></li>
+                  <li><a href="#">log out</a></li>
+                </ul>
+              </div>
+                </div>
+            </a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!-- header/navbar section ends -->
+
+    <!-- banner/ads section begins -->
+    <section class="home" id="HOME">
+        <div class="middle">
+            <div class="banner">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" class="changeBtn" id="radio1">
+                        <input type="radio" name="radio-btn" class="changeBtn" id="radio2">
+                        <input type="radio" name="radio-btn" class="changeBtn" id="radio3">
+                        <input type="radio" name="radio-btn" class="changeBtn" id="radio4">
+
+                        <div class="slide first">
+                            <img src="assets/ads/Ad1.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/ads/Ad2.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/ads/Ad3.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/ads/Ad4.png" alt="logo">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    document.getElementById("radio1").checked = true;
+
+                    var counter = 2;
+
+                    setInterval(function() {
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                        if (counter > 4) {
+                            counter = 1;
+                        }
+                    }, 3000);
+                </script>
+            </div>
+            <!-- banner/ads section ends -->
+
+            <!-- home section begins  -->
+
+            <section class="features home" id="TICKETS">
+
+                <h1 class="heading"> BOOK <span>TICKETS</span> </h1>
+
+                <div class="box-container">
+                    <div class="box">
+                        <img src="assets/icons/PLANEICON.png" alt="logo">
+                        <h3>DOMESTIC AIRLINE</h3>
+                        <!-- <div class="price"> RS3000--RS10000 </div> -->
+                        <a href="flight_booking_form.php" class="btn">BOOK NOW</a>
+                    </div>
+
+                    <div class="box box1">
+                        <div class="abc">
+                            <img src="assets/icons/PLANEICON.png" alt="LOGO">
+                            <h3>INTERNATIONAL AIRLINE</h3>
+                            <!-- <div class="price">RS50000--RS100000 </div> -->
+                            <a href="#" class="btn">BOOK NOW</a>
+                        </div>
+                        <div class="text">COMMING SOON</div>
+                    </div>
+                    <script>
+                        var box = document.querySelector(".box1")
+                        var abc = document.querySelector(".abc")
+                        console.log("ddd:", box)
+
+                        box.addEventListener('mouseover', function() {
+                            abc.style.opacity = "0.1";
+
+                            var text = document.querySelector(".text");
+                            text.style.visibility = "visible";
+                        })
+
+                        box.addEventListener('mouseout', function() {
+                            abc.style.opacity = "1";
+                            var text = document.querySelector(".text");
+                            text.style.visibility = "hidden";
+
+                        })
+                    </script>
+
+                </div>
+            </section>
+            <script src="assets/js/loginscript.js"></script>
+            <!-- home section ends  -->
+
+            <!-- payment partner details section begins  -->
+            <section class="review" id="PAYMENT">
+
+                <h1 class="heading"> PAYMENT <span>PARTNERS</span> </h1>
+
+                <div class="review-slider">
+                    <div class="box">
+                        <div><img src="assets/logos/esewa.png" alt=""></div>
+                        <h3>ESEWA</h3>
+                        <p>TicketKinee uses a widely use digital...</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+            </section>
+            <!-- payment partner details section ends  -->
+
+            <!-- footer section begins  -->
+
+            <footer class="footer">
+                <div class="content">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>TicketKinee</h4>
+                            <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">affiliate program</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Get Help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+
+                                <li><a href="#">returns</a></li>
+                                <li><a href="#">order status</a></li>
+                                <li><a href="#">payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="https://facebook.com/TicketKinee"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Developers</h4>
+                            <div class="social-links">
+                                <a href="https://instagram.com/iyush__mdr_/" target="_blank"><i class="fa-solid fab fa-laptop-code"></i></a>
+                                <a href="https://instagram.com/__ekinnnn__" target="_blank"><i class="fa-solid fab fa-laptop-code"></i></a>
+                                <a href="https://instagram.com/s1_1mit" target="_blank"><i class="fa-solid fa-database"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <footer class="copyrightBlock ">
+                <p class="copyrightNotice ">&copy; Copyright 2022, TicketKinee</p>
+            </footer>
+            <!-- footer section ends  -->
+</body>
+
+</html>

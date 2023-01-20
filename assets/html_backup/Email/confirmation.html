@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+    <html>
+    
+    <head>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                background-color: #2e72d183;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-decoration: none;
+                margin: auto;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+    
+            table{
+                border: none;
+            }
+    
+            td{
+                text-align: center;
+            }
+            
+            .logo-container img {
+                max-height: 8rem;
+                max-width: auto;
+                padding: 1rem 1rem;
+            }
+            
+            .email-text {
+                font-weight: bolder;
+                font-size: 2.5rem;
+                padding: 0;
+            }
+            
+            .text-body {
+                font-size: 1rem;
+            }
+
+            .text-body-details{
+                text-align: left;
+            }
+            
+            .footer-text-body {
+                color: #2e72d1;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <div class='logo-container'>
+                        <a href='landing_page.php'><img src='https://lh3.googleusercontent.com/pw/AM-JKLXCDX3KGE27TacsK_5uKgt5Dq7IStDVbrndJed3_GIgvCpshWjitsSIsnNV9QDPLWAIK5sXmoJVOXZ3vqB4uPsM740o6cVAQRc3GJ5AAKbraaVa8IE3fAh1jHwmllCeW17mYe56QYfSvbkjR4ym37VoNg=w858-h442-no?authuser=0'></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class='email-text'>
+                        <h4>Hi, $first_name</h4>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class='email-text'>
+                        <h5>Ticket Confirmed</h5>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class='text-body'>
+                        <h3>You have successfully booked the flight ticket for $destination.</h3>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class='text-body'>
+                        <h3>The flight details are as follows:</h3>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <div class='text-body-details'>
+                <td  class='text-body-details'>Flight No.: $flight_no</td>
+            </tr>
+            <tr>
+                <div class='text-body-details'>
+                <td  class='text-body-details'>From: $location_from</td>
+                </div>
+            </tr>
+            <tr>
+                <div class='text-body-details'>
+                <td  class='text-body-details'>To: $destination</td>
+                </div>
+            </tr>
+            <tr>
+                <div class='text-body-details'>
+                <td  class='text-body-details'>Departure Date: $departure_datetime</td>
+                </div>
+            </tr>
+            <tr>
+                <div class='text-body-details'>
+                <td  class='text-body-details'>Return Date: $arrival_datetime</td>
+                </div>
+            </tr>
+            <tr>
+                <div class='text-body-details'>
+                <td  class='text-body-details'>Number of travellers: $no_of_travellers</td>
+                </div>
+            </tr>
+            <tr>
+                <div class='text-body-details'>
+                <td  class='text-body-details'>Price: $total_price</td>
+                </div>
+            </tr>
+            <tr>
+                <td>
+                    <div class='text-body'>
+                        <p><small>If this wasn't you then please contact <a href='contact_us.php'>TicketKinee.</a></small></p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class='footer-text-body'>
+                        <p><small>TicketKinee © 2022 TicketKinee, Inc. All Rights Reserved.</br>Kathmandu, Bagmati Province, Nepal.</small></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

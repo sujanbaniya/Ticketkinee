@@ -1,0 +1,31 @@
+.aboutUsContainer{
+    min-height: 80vh;
+    padding: 40px 130px;
+    line-height: 1.8;
+}
+.aboutUsContainer h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(27, 85, 100);
+}
+.aboutUsContainer p{
+    margin-left: 12px;
+}
+.aboutUsContainer p.someee{
+    margin-left: 12px;
+    margin-top: 10px;
+}
+.aboutUsContainer p.namessss{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+p.namessss span{
+    font-size: 20px;
+    font-weight: 500;
+}
+p.namessss span.ddd{
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: -15px;
+}

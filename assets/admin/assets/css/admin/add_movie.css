@@ -1,0 +1,54 @@
+.topic{
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-bottom :20px;
+}
+form{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid; */
+    margin-left: 100px;
+    margin-top: 5px;
+}
+form  input{
+    background-color: wheat;
+    width: 100%;
+    border: none;
+    color: black;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 3px;
+    font-size: 17px;
+    padding: 5px;
+    outline: none;
+}
+.submit-btn{
+    margin-top: 30px;
+    margin-left: 70%;
+    padding: 10px;
+    width: 30%;
+    height: auto;
+}
+input[type=time]::-webkit-datetime-edit-ampm-field {
+    display: none;
+}
+input[type=time]::-webkit-clear-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance:none;
+    appearance: none;
+}
+.note{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    /* margin-top: 5px; */
+    margin-left: 20px;
+}
+.note img{
+    height: 40px;
+    /* font-size: 35px; */
+}
